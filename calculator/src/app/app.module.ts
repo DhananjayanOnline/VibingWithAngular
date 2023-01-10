@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MycomponentComponent } from './mycomponent/mycomponent.component';
 import { AdditionComponent } from './addition/addition.component';
+import { SubtractionComponent } from './subtraction/subtraction.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MycomponentComponent,
-    AdditionComponent
+    AdditionComponent,
+    SubtractionComponent
   ],
   imports: [
     BrowserModule,
