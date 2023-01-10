@@ -7,14 +7,16 @@ import { MycomponentComponent } from './mycomponent/mycomponent.component';
 import { AdditionComponent } from './addition/addition.component';
 import { SubtractionComponent } from './subtraction/subtraction.component';
 
-import { FormsModule } from '@angular/forms'
+import { FormsModule } from '@angular/forms';
+import { MultiplicationComponent } from './multiplication/multiplication.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     MycomponentComponent,
     AdditionComponent,
-    SubtractionComponent
+    SubtractionComponent,
+    MultiplicationComponent
   ],
   imports: [
     BrowserModule,
