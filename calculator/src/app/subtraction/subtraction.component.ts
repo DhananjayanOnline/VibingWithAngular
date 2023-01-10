@@ -7,12 +7,12 @@ import { Component } from '@angular/core';
 })
 export class SubtractionComponent {
 
-  result:Number = 0
+  result:number = 0
 
-  subtraction(number1:any, number2:any){
-    let num1 = Number(number1.value)
-    let num2 =+ number2.value
+  num1:number = 0
+  num2:number = 0
 
-    this.result = num1-num2
+  subtraction(){
+    this.result = this.num1 - this.num2
   }
 }
