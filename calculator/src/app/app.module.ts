@@ -8,7 +8,8 @@ import { AdditionComponent } from './addition/addition.component';
 import { SubtractionComponent } from './subtraction/subtraction.component';
 
 import { FormsModule } from '@angular/forms';
-import { MultiplicationComponent } from './multiplication/multiplication.component'
+import { MultiplicationComponent } from './multiplication/multiplication.component';
+import { FactorialComponent } from './factorial/factorial.component'
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { MultiplicationComponent } from './multiplication/multiplication.compone
     MycomponentComponent,
     AdditionComponent,
     SubtractionComponent,
-    MultiplicationComponent
+    MultiplicationComponent,
+    FactorialComponent
   ],
   imports: [
     BrowserModule,
