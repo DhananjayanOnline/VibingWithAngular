@@ -10,7 +10,8 @@ import { SubtractionComponent } from './subtraction/subtraction.component';
 import { FormsModule } from '@angular/forms';
 import { MultiplicationComponent } from './multiplication/multiplication.component';
 import { FactorialComponent } from './factorial/factorial.component';
-import { PrimeNumberComponent } from './prime-number/prime-number.component'
+import { PrimeNumberComponent } from './prime-number/prime-number.component';
+import { FabinocciComponent } from './fabinocci/fabinocci.component'
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { PrimeNumberComponent } from './prime-number/prime-number.component'
     SubtractionComponent,
     MultiplicationComponent,
     FactorialComponent,
-    PrimeNumberComponent
+    PrimeNumberComponent,
+    FabinocciComponent
   ],
   imports: [
     BrowserModule,
