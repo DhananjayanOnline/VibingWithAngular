@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CalcService } from '../services/calc.service';
 
 @Component({
   selector: 'app-factorial',
@@ -6,15 +7,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./factorial.component.css']
 })
 export class FactorialComponent {
+
+  constructor(private service:CalcService){}
+
   inpt:number = 0
   result = 0
   fac = 1
 
   fact(){
-    for(let i=1; i<=this.inpt; i++){
-      this.fac=this.fac*i
-    }
 
-    this.result=this.fac
+    let n = this.inpt
+    let data = {
+      "num":n
+    }
+    
+    this.service.performFactorial(data).then(res=> res.json()).then(data=> this.result=data.Result)
   }
 }

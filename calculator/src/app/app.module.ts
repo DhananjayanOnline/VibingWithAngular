@@ -12,7 +12,8 @@ import { MultiplicationComponent } from './multiplication/multiplication.compone
 import { FactorialComponent } from './factorial/factorial.component';
 import { PrimeNumberComponent } from './prime-number/prime-number.component';
 import { FabinocciComponent } from './fabinocci/fabinocci.component';
-import { NavbarComponent } from './navbar/navbar.component'
+import { NavbarComponent } from './navbar/navbar.component';
+import { SigninComponent } from './signin/signin.component'
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { NavbarComponent } from './navbar/navbar.component'
     FactorialComponent,
     PrimeNumberComponent,
     FabinocciComponent,
-    NavbarComponent
+    NavbarComponent,
+    SigninComponent
   ],
   imports: [
     BrowserModule,
