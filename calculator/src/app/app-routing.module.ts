@@ -10,7 +10,7 @@ import { SubtractionComponent } from './subtraction/subtraction.component';
 
 const routes: Routes = [
   {path:"addition", component:AdditionComponent},
-  {path:"subtration", component:SubtractionComponent},
+  {path:"subtraction", component:SubtractionComponent},
   {path:"product", component:MultiplicationComponent},
   {path:"factorial", component:FactorialComponent},
   {path:"prime", component:PrimeNumberComponent},
