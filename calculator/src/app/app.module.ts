@@ -11,7 +11,8 @@ import { FormsModule } from '@angular/forms';
 import { MultiplicationComponent } from './multiplication/multiplication.component';
 import { FactorialComponent } from './factorial/factorial.component';
 import { PrimeNumberComponent } from './prime-number/prime-number.component';
-import { FabinocciComponent } from './fabinocci/fabinocci.component'
+import { FabinocciComponent } from './fabinocci/fabinocci.component';
+import { NavbarComponent } from './navbar/navbar.component'
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FabinocciComponent } from './fabinocci/fabinocci.component'
     MultiplicationComponent,
     FactorialComponent,
     PrimeNumberComponent,
-    FabinocciComponent
+    FabinocciComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
