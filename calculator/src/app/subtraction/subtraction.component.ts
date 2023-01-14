@@ -17,7 +17,7 @@ export class SubtractionComponent {
 
   subtraction(){
     let data = {
-      "num1": this.n1,
+      "num1":this.n1,
       "num2":this.n2
     }
 

@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6">
+            <form class="mt-5" action="" [formGroup]="form" (ngSubmit)="register()">
+                <div class="mb-3">
+                    <input class="form-control" type="text" formControlName="firstname" placeholder="enter your firstname">
+                    <div class="text-danger" *ngIf="this.form.get('firstname')?.touched && this.form.get('firstname')?.invalid">firstname is required</div>
+                </div>
+                <div class="mb-3">
+                    <input class="form-control" type="text" formControlName="lastname" placeholder="enter your lastname">
+                    <div class="text-danger" *ngIf="lastname?.touched && lastname?.invalid">lastname if required</div>
+                </div>
+                <div class="mb-3">
+                    <input class="form-control" type="text" formControlName="email" placeholder="enter your email">
+                    <div class="text-danger" *ngIf="email?.touched && email?.invalid">email is required</div>
+                </div>
+                <div class="mb-3">
+                    <input class="form-control" type="text" formControlName="username" placeholder="enter your username">
+                    <div class="text-danger" *ngIf="username?.touched && username?.invalid">username is required</div>
+                </div>
+                <div class="mb-3">
+                    <input class="form-control" type="text" formControlName="password" placeholder="enter your password">
+                    <div class="text-danger" *ngIf="password?.touched && password?.invalid">password is required</div>
+                </div>
+                <div class="mb-3">
+                    <input class="btn btn-primary form-control" type="submit" [disabled]="form.invalid" value="register">
+                </div>
+            </form>
+        </div>
+        <div class="col-3"></div>
+    </div>
+</div>
