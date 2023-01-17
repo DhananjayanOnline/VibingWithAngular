@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms'
 import { TaskService } from '../services/task.service';
+import { Router } from '@angular/router'
 
 @Component({
   selector: 'app-login',
@@ -9,7 +10,7 @@ import { TaskService } from '../services/task.service';
 })
 export class LoginComponent {
 
-  constructor(private service:TaskService){
+  constructor(private service:TaskService, private router:Router){
 
   }
 
@@ -31,6 +32,7 @@ export class LoginComponent {
     this.service.getToken(data).then(res=> res.json()).then(data=> {
       let token = data.token
       localStorage.setItem("token", "Token "+token)
+      this.router.navigateByUrl("home")
     })
   }
 
