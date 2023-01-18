@@ -14,7 +14,7 @@ export class TaskListComponent implements OnInit {
   constructor(private service:TaskService){}
 
   ngOnInit(): void {
-      this.service.listTask().then((res:any)=> res.json()).then(data=> console.log(data)).catch(err=> alert(err))
+      this.service.listTask().then((res:any)=> res.json()).then(data=> this.allTasks=data).catch(err=> alert(err))
   }
 }
 
