@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { outputAst } from '@angular/compiler';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms'
 import { TaskService } from '../services/task.service';
 
@@ -11,6 +12,8 @@ export class TaskAddComponent {
 
   constructor(private service:TaskService){}
 
+  @Output()notify:EventEmitter<boolean> = new EventEmitter<boolean>
+
   taskForm = new FormGroup({
     "task_name": new FormControl("", [Validators.required])
   })
@@ -22,7 +25,8 @@ export class TaskAddComponent {
   createTask(){
     let data=this.taskForm.value
     this.service.addTask(data).then((res:any)=> res.json()).then(data=> console.log("TASK CREATED!!!!")).catch(err=> alert(err))
+    
+    this.notify.emit(true) //event emting for child perent communication
   }
-  
 
 }

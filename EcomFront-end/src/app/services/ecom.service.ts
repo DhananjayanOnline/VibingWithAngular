@@ -15,6 +15,6 @@ export class EcomService {
         "content-type": "application/json"
       }
     }
-    return fetch("localhost:8000/jwt/token/", options)
+    return fetch("http://127.0.0.1:8000/jwt/token/", options)
   }
 }
