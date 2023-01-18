@@ -40,7 +40,7 @@ export class TaskService {
     if(token){
       let options = {
         "method": "get",
-        "header": {
+        "headers": {
           "content-type": "application/json",
           "Authorization": token
         }
